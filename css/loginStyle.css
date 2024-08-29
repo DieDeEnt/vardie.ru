@@ -1,0 +1,28 @@
+.auth-form {
+    width: 320px;
+}
+
+.conteiner.logo {
+    padding-top: 40px;
+    padding-bottom: 35px;
+}
+
+.conteiner.form {
+    background-color: var(--bgColor-darkGray);
+    border: 1px solid var(--borderColor-default-gray);
+    border-radius: 7px;
+}
+
+.conteiner.create-account {
+    background-color: var(--bgColor-veryDarkBlue);
+    border: 1px solid var(--borderColor-default-gray);
+    border-radius: 7px;
+}
+
+.conteiner.footer {
+    margin-top: 40px;
+    padding: 32px 16px;
+}
+
+
+

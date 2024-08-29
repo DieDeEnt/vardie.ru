@@ -1,0 +1,73 @@
+/* Предосмотр картинки в editProfile */
+
+.lable.preview {
+    display: inline-block;
+    /* width: 8em;
+    height: 8em; */
+    height: 304px; 
+    width: 304px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 50%;
+    transition: var(--time-focus) ease-in-out;
+    
+ 
+  }
+
+  .lable.preview:hover {
+    cursor: pointer;
+    filter: blur(5px);
+
+    
+  }
+
+  .form{
+    max-width: 50%;
+    margin: 0 auto;
+  }
+
+  /* .avatart.conteiner{
+    position: absolute;
+    top:0;
+  } */
+
+  .camera{
+    visibility: hidden;
+    /* position: absolute;
+    top:0; */
+ 
+  }
+
+  .conteiner.preview:hover .camera{
+    visibility: visible;
+    
+    
+  }
+
+  a{
+    text-decoration: none;
+  }
+
+
+  .input{
+    color:var(--bgColor-veryDarkBlue);
+    background-color: var(--textColor-default-text);
+    max-width:300px;
+
+  }
+
+  .conteiner.main{
+    display: block;
+    margin: 0 auto; 
+  }
+
+  .conteiner.p-40{
+    display: block;
+    margin: 0 auto; 
+  }
+
+
+
+
+  
