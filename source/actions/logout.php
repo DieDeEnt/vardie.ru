@@ -1,4 +1,9 @@
 <?php
     require_once __DIR__ . '/../helpers.php';
-    logout();
+    
+    if($_SERVER['REQUEST_METHOD'] == 'POST'){
+        logout();
+    }
+
+    redirect('/homePage.php');
 ?>

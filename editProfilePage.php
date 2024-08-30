@@ -1,5 +1,6 @@
 <?php
     require_once __DIR__ . '/source/helpers.php';
+    authUser();
     $user = currentUser();
 ?>
 
@@ -71,9 +72,17 @@
                 >
                 <p><label class="error-text sub-text"    for="email"><?php setErrorMessage(fieldName:'newUsername')?></label></p>
 
-
-                <div><input class="mt-16 btn input btn-success" type="submit" value="Edit" /><a class="mt-16 mx-8 btn input btn-success" href="/homePage.php" >Home</a></div>
                 
+
+                <div>
+                    <input class="mt-16 btn input btn-success" type="submit" value="Edit" />
+                    <a class="mt-16 mx-8 btn input btn-success" href="/homePage.php" >Home</a>
+
+                </div>
+                
+            </form>
+            <form action="source/actions/logout.php" method="post">
+                        <input class="mt-16 btn input btn-success" type="submit" value="Log out" />
             </form>
             
         </div>

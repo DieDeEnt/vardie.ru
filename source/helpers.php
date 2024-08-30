@@ -63,6 +63,10 @@
             return false;
         }
 
+        if(!isset($_SESSION['user']['id'])){
+            redirect('/');
+        }
+
         $userId = $_SESSION['user']['id'] ?? null;
 
         // check email
@@ -74,10 +78,22 @@
 
     }
 
+    function authUser() : void{
+        if(!isset($_SESSION['user']['id'])){
+            redirect('/');
+        }
+    }
+
+    function ghostAuth() : void{
+        if(!isset($_SESSION['user']['id'])){
+            redirect('/homePage.php');
+        }
+    }
+
     function logout()
     {
         unset($_SESSION['user']['id']);
-        redirect(path: '/../index.php');
+        redirect(path: '/');
     }
 
 

@@ -11,7 +11,7 @@
     <!-- Page Name -->
     <title>Vardie reg</title>
     <!-- Page Logo -->
-    <link rel="shortcut icon" href="icon/logo.png" type="image/png" />
+    <link rel="shortcut icon" href="icon/logo123.png" type="image/png" />
 
 
     <!-- main.css -->
@@ -28,7 +28,7 @@
 <body>
     <div class="conteiner position-relative logo width-full text-center">
         <div class="reg text-center logo">
-            <a href="/"><img src="icon/logo.png" height="67.5" width="71" /></a>
+            <a href="/"><img src="icon/logo123.png" height="67.5" width="71" /></a>
         </div>
     </div>
     <div class="conteiner main width-full">

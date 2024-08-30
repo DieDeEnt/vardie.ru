@@ -55,7 +55,7 @@
 		$avatarPath = __DIR__ . '/../../avatar';
 
 		if(!is_dir($avatarPath)){
-			echo 1;
+			
 			mkdir($avatarPath, 0777, true);
 		}
 
