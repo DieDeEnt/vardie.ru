@@ -1,5 +1,5 @@
 <?php
-    const DB_HOST = 'MySQL-5.7';
+    const DB_HOST = 'MySQL-8.0.39';
 
     const DB_PORT = '3306';
 
