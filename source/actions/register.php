@@ -8,7 +8,7 @@
 	$email = $_POST['email'] ?? null;
 	$password = $_POST['password'] ?? null;
 	$re_enter_password = $_POST['re_enter_password'] ?? null;
-
+	$name = "user";
 	
 	if(empty($username)){
 		$_SESSION['validation']['username'] = 'Please enter username.';
@@ -71,12 +71,13 @@
 		redirect(path: '/registerPage.php');
 	}
 	//write in db
-	$query = "INSERT INTO users (username, email, password) VALUE (:username, :email, :password)";
+	$query = "INSERT INTO users (username, name, email, password) VALUE (:username, :name, :email, :password)";
 	$params = [
 
 		'username' => $username,
-		 'email' => $email,
-		  'password' => password_hash($password, algo:PASSWORD_DEFAULT)
+		 'name' => $name,
+		  'email' => $email,
+		   'password' => password_hash($password, algo:PASSWORD_DEFAULT)
 	];
 
 	$stmt = $pdo->prepare($query);
