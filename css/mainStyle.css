@@ -95,7 +95,9 @@ a:hover {
     font-size: var(--default-text-size);
 }
 
-
+.height-full {
+    height: 100%;
+}
 
 
 
