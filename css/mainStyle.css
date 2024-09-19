@@ -46,6 +46,10 @@ body {
     
 }
 
+footer {
+    margin-top: 100%;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -94,10 +98,6 @@ a:hover {
 .text {
     font-size: var(--default-text-size);
 }
-
-/* .height-full {
-    height: 100%;
-} */
 
 
 
