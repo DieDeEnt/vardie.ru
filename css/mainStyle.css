@@ -52,6 +52,10 @@ body {
     box-sizing: border-box;
 }
 
+#content{
+    height:100%;
+}
+
 div {
     display: block;
     unicode-bidi: isolate;
