@@ -12,7 +12,7 @@
     <!-- Page Name -->
     <title>Vardie sign in</title>
     <!-- Page Logo -->
-    <link rel="shortcut icon" href="icon/logo.jpg" type="image/jpg" />
+    <link rel="shortcut icon" href="icon/logo123.png" type="image/png" />
 
 
     <!-- main.css -->
@@ -29,7 +29,7 @@
 <body>
     <div class="conteiner position-relative logo width-full text-center">
         <div class="sign-in text-center logo">
-            <a href="/"><img src="/icon/logo.jpg" height="67.5" width="71"/></a>
+            <a href="/"><img src="/icon/logo123.png" height="67.5" width="71"/></a>
         </div>
     </div>
     <div class="conteiner main width-full">
