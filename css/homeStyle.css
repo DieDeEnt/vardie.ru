@@ -19,6 +19,11 @@
     
 }
 
+.main {
+    height: 100%;
+}
+
+
 main{
     max-width:70%;
     display: flex;
