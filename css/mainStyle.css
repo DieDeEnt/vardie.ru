@@ -43,7 +43,7 @@ body {
     background-color: var(--bgColor-veryDarkBlue);
     color: var(--textColor-default-text);
     font-size: var(--default-text-size);
-    height: inherit;
+    height: 100%;
 }
 
 * {
