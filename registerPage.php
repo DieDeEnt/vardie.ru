@@ -53,9 +53,9 @@
                             name="username" 
                             placeholder="" 
                             
-                            value="<?php echo old(key:'username')?>"
+                            value="<?php echo old('username')?>"
                         /><br />
-                        <label class="error-text sub-text"    for="username"><?php setErrorMessage(fieldName:'username')?></label>
+                        <label class="error-text sub-text"    for="username"><?php setErrorMessage('username')?></label>
                         
 
 
@@ -69,9 +69,9 @@
                             name="email" 
                             placeholder="" 
                             
-                            value="<?php echo old(key:'email')?>"
+                            value="<?php echo old('email')?>"
                         /><br />
-                        <label class="error-text sub-text"    for="email"><?php setErrorMessage(fieldName:'email')?></label>
+                        <label class="error-text sub-text"    for="email"><?php setErrorMessage('email')?></label>
 
 
                         <div class="text mt-8">
@@ -85,7 +85,7 @@
                             placeholder="" 
                             
                         /><br />
-                        <label class="error-text sub-text"    for="password"><?php setErrorMessage(fieldName:'password')?></label>
+                        <label class="error-text sub-text"    for="password"><?php setErrorMessage('password')?></label>
 
                         <div class="text mt-8">
                             <lable class="reg text">Re-Enter Password</lable>
@@ -99,7 +99,7 @@
                             
                             
                         />
-                        <label class="error-text sub-text"    for="re_enter_password"><?php setErrorMessage(fieldName:'re_enter_password')?></label>
+                        <label class="error-text sub-text"    for="re_enter_password"><?php setErrorMessage('re_enter_password')?></label>
 
 
                         <input class="btn width-full input btn-success mt-8" type="submit" value="Continue" />
