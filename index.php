@@ -54,11 +54,11 @@
                             id="email" 
                             placeholder="" 
                             class="form sing-in width-full input mt-4 mb-4" 
-                            value="<?php echo old(key:'email')?>"
+                            value="<?php echo old('email')?>"
                             
                         /><br />
                         <!-- error -->
-                        <label class="error-text sub-text" for="email"><?php setErrorMessage(fieldName:'email')?></label>
+                        <label class="error-text sub-text" for="email"><?php setErrorMessage('email')?></label>
 
 
                         <div class="text mt-8">
@@ -74,7 +74,7 @@
                             
                         /><br />
                         <!-- error -->
-                        <label class="error-text sub-text " for="password"><?php setErrorMessage(fieldName:'password')?></label>
+                        <label class="error-text sub-text " for="password"><?php setErrorMessage('password')?></label>
 
 
                         <input type="submit" value="Sign in" class="btn width-full input btn-success mt-8" />

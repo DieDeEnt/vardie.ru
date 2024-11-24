@@ -29,7 +29,7 @@ else if(mb_strlen($password, 'utf-8')> 32){
 
 if(!empty($_SESSION['validation'])){
     setOldValue('email',$email);
-    redirect(path: '/index.php');
+    redirect('/index.php');
 }
 
 
@@ -40,19 +40,19 @@ if (!$user) {
     $_SESSION['validation']['email'] =  'E-mail is not registered. <a class="error-text sub-text" for="email" href="registerPage.php">Create account?</a>';
     // save old email
     setOldValue('email',$email);
-    redirect(path: '/index.php');
+    redirect('/index.php');
 }
 // check password
 if (!password_verify($password, $user['password'])) {
     $_SESSION['validation']['password'] =  'Wrong password.';
     // save old email
     setOldValue('email',$email);
-    redirect(path: '/index.php');
+    redirect('/index.php');
 }
 
 $_SESSION['user']['id'] = $user['id'];
 
-redirect(path: '/homePage.php');
+redirect('/homePage.php');
 
     // $pdo = null;
 ?>

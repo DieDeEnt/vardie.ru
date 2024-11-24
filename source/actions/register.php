@@ -52,7 +52,7 @@
 	if(!empty($_SESSION['validation'])){
 		setOldValue('username',$username);
 		setOldValue('email',$email);
-		redirect(path: '/registerPage.php');
+		redirect('/registerPage.php');
 	}
 
 	
@@ -68,7 +68,7 @@
 		$_SESSION['validation']['email'] =  'Email address already use.';
 		setOldValue('username',$username);
 		setOldValue('email',$email);
-		redirect(path: '/registerPage.php');
+		redirect('/registerPage.php');
 	}
 	//write in db
 	$query = "INSERT INTO users (username, name, email, password) VALUE (:username, :name, :email, :password)";
@@ -77,7 +77,7 @@
 		'username' => $username,
 		 'name' => $name,
 		  'email' => $email,
-		   'password' => password_hash($password, algo:PASSWORD_DEFAULT)
+		   'password' => password_hash($password, PASSWORD_DEFAULT)
 	];
 
 	$stmt = $pdo->prepare($query);
@@ -89,7 +89,7 @@
 		die("Data recording error: {$e->getMessage()}");
 	}
 
-	redirect(path:'/index.php');
+	redirect('/index.php');
 
 	$pdo = null;
 ?>
