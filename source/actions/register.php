@@ -9,6 +9,7 @@
 	$password = $_POST['password'] ?? null;
 	$re_enter_password = $_POST['re_enter_password'] ?? null;
 	$name = "user";
+
 	
 	if(empty($username)){
 		$_SESSION['validation']['username'] = 'Please enter username.';

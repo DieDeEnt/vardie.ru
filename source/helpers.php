@@ -15,6 +15,13 @@
     // php php setErrorOutline(fieldName:'re_enter_password') 
     // }
 
+    //Email confirmation
+    function emailConfirm(string $email)
+    {
+        mail($email, "Please confirm email", "Message");
+    }
+
+
     function setErrorMessage(string $fieldName)
     {
         $message = ($_SESSION['validation'][$fieldName]) ?? '';
