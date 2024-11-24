@@ -104,6 +104,7 @@
 		$fileName = $prefix . $user['id'] . '_' . time() . ".$ext";
 
 		if(!move_uploaded_file($file['tmp_name'], "$path/$fileName")){
+            echo "$path/$fileName";
 			$_SESSION['validation']['newAvatar'] = 'The image download error.';
             redirect('/../editProfilePage.php');
 		}
