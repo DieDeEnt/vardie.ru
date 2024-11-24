@@ -45,7 +45,7 @@
         
     }
 
-    function findUser(string $email):array
+    function findUser(string $email):array|bool
     {
         $pdo = setPDO();
 
@@ -55,12 +55,12 @@
         return $query->fetch(\PDO::FETCH_ASSOC);
     }
 
-    function currentUser() : array {
+    function currentUser() : array|false {
         
         $pdo = setPDO();
 
         if(!isset($_SESSION['user'])){
-            redirect('/');
+            return false;
         }
 
         if(!isset($_SESSION['user']['id'])){
