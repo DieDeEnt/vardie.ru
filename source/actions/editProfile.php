@@ -38,7 +38,7 @@
 	if(!empty($_SESSION['validation'])){
 		setOldValue('newUsername',$newUsername);
 		
-		redirect(path: '/../editProfilePage.php');
+		redirect('/../editProfilePage.php');
 	}
 
 	if(!empty($newUsername)){
@@ -46,7 +46,7 @@
 	}
 
 	if($_FILES['newAvatar']['size'] == 0){
-		redirect(path: '/../homePage.php');
+		redirect('/../homePage.php');
 	}
 
 	//valid new avatar
@@ -70,7 +70,7 @@
 	// var_dump($newAvatar);
 
 	
-	redirect(path: '/../homePage.php');
+	redirect('/../homePage.php');
 
 
 

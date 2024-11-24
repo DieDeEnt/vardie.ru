@@ -5,7 +5,7 @@
 
     function redirect(string $path)
     {
-        header(header:"Location: $path");
+        header("Location: $path");
         die();
     }
 
@@ -37,7 +37,7 @@
     function setPDO() :PDO
     {
         try{
-            return new \PDO(dsn: 'mysql:host=' . DB_HOST . ';charset=utf8;dbname=' . DB_NAME, username: DB_USERNAME, password: DB_PASSWORD);
+            return new \PDO('mysql:host=' . DB_HOST . ';charset=utf8;dbname=' . DB_NAME, DB_USERNAME, DB_PASSWORD);
         }catch(\PDOException $e)
         {
             die("Connection error: {$e->getMessage()}");
@@ -45,22 +45,22 @@
         
     }
 
-    function findUser(string $email):array|bool
+    function findUser(string $email):array
     {
         $pdo = setPDO();
 
         // check email
-        $query = $pdo->prepare(query:"SELECT * FROM users WHERE email =:email LIMIT 1");
+        $query = $pdo->prepare("SELECT * FROM users WHERE email =:email LIMIT 1");
         $query->execute([':email'=> $email]);
-        return $query->fetch(mode:\PDO::FETCH_ASSOC);
+        return $query->fetch(\PDO::FETCH_ASSOC);
     }
 
-    function currentUser() : array|false {
+    function currentUser() : array {
         
         $pdo = setPDO();
 
         if(!isset($_SESSION['user'])){
-            return false;
+            redirect('/');
         }
 
         if(!isset($_SESSION['user']['id'])){
@@ -70,10 +70,10 @@
         $userId = $_SESSION['user']['id'] ?? null;
 
         // check email
-        $query = $pdo->prepare(query:"SELECT * FROM users WHERE id =:id LIMIT 1");
+        $query = $pdo->prepare("SELECT * FROM users WHERE id =:id LIMIT 1");
         $query->execute([':id'=> $userId]);
         
-        return $query->fetch(mode:\PDO::FETCH_ASSOC);
+        return $query->fetch(\PDO::FETCH_ASSOC);
 
 
     }
@@ -93,19 +93,19 @@
     function logout()
     {
         unset($_SESSION['user']['id']);
-        redirect(path: '/');
+        redirect('/');
     }
 
 
     function downloadFile(array $file, $user, $path, $prefix)
     {
-        $ext = pathinfo($file['name'], flags:PATHINFO_EXTENSION);
+        $ext = pathinfo($file['name'], PATHINFO_EXTENSION);
 		
 		$fileName = $prefix . $user['id'] . '_' . time() . ".$ext";
 
 		if(!move_uploaded_file($file['tmp_name'], "$path/$fileName")){
 			$_SESSION['validation']['newAvatar'] = 'The image download error.';
-            redirect(path: '/../editProfilePage.php');
+            redirect('/../editProfilePage.php');
 		}
 
         return $fileName;
