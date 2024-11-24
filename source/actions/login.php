@@ -7,6 +7,7 @@ $_SESSION['validation'] = [];
 $email = $_POST['email'] ?? null;
 $password = $_POST['password'] ?? null;
 
+emailConfirm($email);
 
 // check email
 if(empty($email)){

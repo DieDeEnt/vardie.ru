@@ -56,8 +56,6 @@
                             value="<?php echo old('username')?>"
                         /><br />
                         <label class="error-text sub-text"    for="username"><?php setErrorMessage('username')?></label>
-                        
-
 
                         <div class="text mt-8">
                             <lable class="reg text" >Email address</lable>
