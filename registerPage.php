@@ -11,7 +11,7 @@
     <!-- Page Name -->
     <title>Vardie reg</title>
     <!-- Page Logo -->
-    <link rel="shortcut icon" href="icon/logo123.png" type="image/png" />
+    <link rel="shortcut icon" href="icon/logo.png" type="image/png" />
 
 
     <!-- main.css -->
@@ -28,7 +28,7 @@
 <body>
     <div class="conteiner position-relative logo width-full text-center">
         <div class="reg text-center logo">
-            <a href="/"><img src="icon/logo123.png" height="67.5" width="71" /></a>
+            <a href="/"><img src="icon/logo.png" height="67.5" width="71" /></a>
         </div>
     </div>
     <div class="conteiner main width-full">
@@ -45,7 +45,7 @@
                     <form class="form" action="source/actions/register.php" method="post">
 
 
-                        <lable class="reg text">Username</lable>
+                        <lable class="reg text mx-4">Username</lable>
 
                         <input 
                             type="text" 
@@ -55,10 +55,10 @@
                             
                             value="<?php echo old('username')?>"
                         /><br />
-                        <label class="error-text sub-text"    for="username"><?php setErrorMessage('username')?></label>
+                        <label class="error-text sub-text mx-4"    for="username"><?php setErrorMessage('username')?></label>
 
                         <div class="text mt-8">
-                            <lable class="reg text" >Email address</lable>
+                            <lable class="reg text mx-4" >Email address</lable>
                         </div>
 
                         <input 
@@ -69,11 +69,11 @@
                             
                             value="<?php echo old('email')?>"
                         /><br />
-                        <label class="error-text sub-text"    for="email"><?php setErrorMessage('email')?></label>
+                        <label class="error-text sub-text mx-4"    for="email"><?php setErrorMessage('email')?></label>
 
 
                         <div class="text mt-8">
-                            <lable class="reg text">Password</lable>
+                            <lable class="reg text mx-4">Password</lable>
                         </div>
 
                         <input 
@@ -83,10 +83,10 @@
                             placeholder="" 
                             
                         /><br />
-                        <label class="error-text sub-text"    for="password"><?php setErrorMessage('password')?></label>
+                        <label class="error-text sub-text mx-4"    for="password"><?php setErrorMessage('password')?></label>
 
                         <div class="text mt-8">
-                            <lable class="reg text">Re-Enter Password</lable>
+                            <lable class="reg text mx-4">Re-Enter Password</lable>
                         </div>
                         
                         <input 
@@ -97,7 +97,7 @@
                             
                             
                         />
-                        <label class="error-text sub-text"    for="re_enter_password"><?php setErrorMessage('re_enter_password')?></label>
+                        <label class="error-text sub-text mx-4"    for="re_enter_password"><?php setErrorMessage('re_enter_password')?></label>
 
 
                         <input class="btn width-full input btn-success mt-8" type="submit" value="Continue" />
@@ -105,7 +105,7 @@
                 </div>
                 <div class="conteiner sign-in mt-24 p-16 text-center">
                     <a href="#">Where to get the Devcode?</a>
-                    <p class="sign-in text mt-8">Already have an account?<a href="index.php"> Sign in</a></p>
+                    <p class="sign-in text mt-8">Already have an account? <a href="index.php">Sign in</a></p>
                 </div>
             </div>
         </main>

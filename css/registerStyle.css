@@ -1,8 +1,16 @@
+@media (min-width: 530px){
+    .auth-form {
+        width: 100%;
+        max-width: 420px;
+    }
+  }
 
-.auth-form {
-    width: 100%;
-    max-width: 420px;
-}
+@media (max-width: 530px){
+    .auth-form {
+        width: 100%;
+        max-width: 80%;
+    }
+  }
 
 
 .conteiner.logo {
