@@ -11,9 +11,9 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <!-- Page Name -->
-    <title>Vardie main</title>
+    <title>Main</title>
     <!-- Page Logo -->
-    <link rel="shortcut icon" href="icon/logo123.png" type="image/png" />
+    <link rel="shortcut icon" href="icon/logo.png" type="image/png" />
 
 
     <!-- mainStyle.css -->
@@ -32,7 +32,7 @@
         <header class="mb-16">
             <div class="conteiner header position-relative logo width-full pt-16 pb-16 px-32">
                 <div class="logo my-a">
-                    <a class="av" href="/homePage.php"><img src="/icon/logo123.png"  height="32" width="35.5" /></a>
+                    <a class="av" href="/homePage.php"><img src="/icon/logo.png"  height="32" width="35.5" /></a>
                 </div>
                 <div class="avatar">
                     <a class="av" href="/editProfilePage.php"><img src="/avatar/<?php echo $user['avatar']?>" height="38" width="38" /></a>
