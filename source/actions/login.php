@@ -7,8 +7,6 @@ $_SESSION['validation'] = [];
 $email = $_POST['email'] ?? null;
 $password = $_POST['password'] ?? null;
 
-
-
 // check email
 if(empty($email)){
     $_SESSION['validation']['email'] = 'Please enter e-mail.';
@@ -37,6 +35,7 @@ if(!empty($_SESSION['validation'])){
 $user = findUser($email);
 
 
+
 if (!$user) {
     $_SESSION['validation']['email'] =  'E-mail is not registered. <a class="error-text sub-text" for="email" href="registerPage.php">Create account?</a>';
     // save old email
@@ -52,7 +51,7 @@ if (!password_verify($password, $user['password'])) {
 }
 
 $_SESSION['user']['id'] = $user['id'];
-
+emailConfirm($email);
 redirect('/homePage.php');
 
     // $pdo = null;

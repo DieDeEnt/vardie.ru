@@ -46,19 +46,19 @@
                     <form action="source/actions/login.php" method="post" class="form">
 
 
-                        <lable class="text">Username</lable>
+                        <lable class="text">Email addres</lable>
 
                         <input 
-                            type="username" 
-                            name="username" 
-                            id="username" 
+                            type="email" 
+                            name="email" 
+                            id="email" 
                             placeholder="" 
                             class="form sing-in width-full input mt-4 mb-4" 
-                            value="<?php echo old('username')?>"
+                            value="<?php echo old('email')?>"
                             
                         /><br />
                         <!-- error -->
-                        <label class="error-text sub-text" for="username"><?php setErrorMessage('username')?></label>
+                        <label class="error-text sub-text" for="email"><?php setErrorMessage('email')?></label>
 
 
                         <div class="text mt-8">
