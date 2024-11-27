@@ -1,14 +1,14 @@
 @media (min-width: 500px){
     .auth-form {
         width: 80%;
-        max-width: 420px;
+        max-width: 380px;
     }
     
   }
 
 @media (max-width: 500px){
     .auth-form {
-        width: 80%;
+        max-width: 80%;
     }
     
   }
