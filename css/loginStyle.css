@@ -1,21 +1,15 @@
-@media (min-width: 530px){
+@media (min-width: 500px){
     .auth-form {
         width: 100%;
         max-width: 320px;
     }
   }
 
-@media (max-width: 530px){
+@media (max-width: 500px){
     .auth-form {
-        width: 100%;
-        max-width: 62%;
+        max-width: 80%;
     }
   }
-
-/* .auth-form {
-    width: 100%;
-    max-width: 320px;
-} */
 
 .conteiner.logo {
     padding-top: 40px;
