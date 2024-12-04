@@ -10,6 +10,8 @@
     --bgColor-veryLightPurpule:rgb(232, 240, 254);
     --bgColor-white:#fff;
     --bgColor-darkGray:rgb(11, 14, 21);
+    /* --bgColor-darkGray:rgb(11, 14, 21); */
+
     --bgColor-Gray: #8d96a0;
     
     --bgColor-input-darkVeryBlue:#05070c;
@@ -28,6 +30,7 @@
 
     /* Setting */
 
+    
     --time-hover: 0.2s;
     --time-focus: 0.4s;
     --default-text-size: 15px;
@@ -46,9 +49,6 @@ body {
     height:100%;
 }
 
-/* footer {
-    margin-top: 100%;
-} */
 
 * {
     margin: 0;
@@ -130,7 +130,7 @@ a:hover {
         /* border: 1px solid var(--bgColor-veryLightPurpule); */
         -webkit-text-fill-color:var(--bgColor-veryDarkPurpule-);
         caret-color: var(--bgColor-veryDarkPurpule-);
-        -webkit-box-shadow: 0 0 0px 1000px var(--bgColor-veryLightPurpule) inset;
+        /* -webkit-box-shadow: 0 0 0px 1000px var(--bgColor-veryLightPurpule) inset; */
 
         /* Хз че эта фигня делает */
         /* transition: background-color 5000s ease-in-out 0s; */
