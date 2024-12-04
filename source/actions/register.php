@@ -71,6 +71,19 @@
 		setOldValue('email',$email);
 		redirect('/registerPage.php');
 	}
+
+	// check duplicates username
+	$query = $pdo->prepare("SELECT 1 FROM users WHERE username =:username LIMIT 1");
+	$query->bindValue(':username', $username);
+	$query->execute();
+	$count = $query->rowCount();
+	if ($count > 0) {
+		$_SESSION['validation']['username'] =  'Username already use.';
+		setOldValue('username',$username);
+		setOldValue('email',$email);
+		redirect('/registerPage.php');
+	}
+
 	//write in db
 	$query = "INSERT INTO users (username, name, email, password) VALUE (:username, :name, :email, :password)";
 	$params = [

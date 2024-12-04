@@ -4,7 +4,7 @@
 
     $newAvatar = $_FILES['newAvatar'] ?? null;
 	
-	$newUsername = $_POST['newUsername'] ?? null;
+	$newName = $_POST['newName'] ?? null;
 
 
 	// $newPassword = $_POST['newPassword'] ?? null;
@@ -12,14 +12,14 @@
 
 
 	//valid new username
-	if(empty($newUsername)){
-		$_SESSION['validation']['newUsername'] = 'Please enter new username.';
+	if(empty($newName)){
+		$_SESSION['validation']['newName'] = 'Please enter new name.';
 	}
-	else if(mb_strlen($newUsername, 'utf-8') < 2){
-		$_SESSION['validation']['newUsername'] = 'The new username is too short.';
+	else if(mb_strlen($newName, 'utf-8') < 2){
+		$_SESSION['validation']['newName'] = 'The new name is too short.';
 	}
-	else if(mb_strlen($newUsername, 'utf-8') > 32){
-		$_SESSION['validation']['newUsername'] = 'The new username is too big.';
+	else if(mb_strlen($newName, 'utf-8') > 16){
+		$_SESSION['validation']['newName'] = 'The new name is too big.';
 	}
 
 
@@ -36,13 +36,13 @@
 	}
 
 	if(!empty($_SESSION['validation'])){
-		setOldValue('newUsername',$newUsername);
+		setOldValue('newName',$newName);
 		
 		redirect('/../editProfilePage.php');
 	}
 
-	if(!empty($newUsername)){
-		updateData($user, 'users', 'username', $newUsername);
+	if(!empty($newName)){
+		updateData($user, 'users', 'name', $newName);
 	}
 
 	if($_FILES['newAvatar']['size'] == 0){

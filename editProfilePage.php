@@ -62,15 +62,15 @@
                 <!-- accept="image/*" -->
                 <label class="error-text sub-text"    for="newAvatar"><?php setErrorMessage(fieldName:'newAvatar')?></label>
 
-                <p><label class=" mt-8" for="newUsername">Re-Name</label></p>
+                <p><label class=" mt-8" for="newName">Re-Name</label></p>
                 <input 
                     type="text" 
                     class="form width-full input mb-4 mt-4"
-                    id="newUsername"
-                    name="newUsername"
-                    value="<?php echo $user['username']?>"
+                    id="newName"
+                    name="newName"
+                    value="<?php echo $user['name']?>"
                 >
-                <p><label class="error-text sub-text"    for="email"><?php setErrorMessage(fieldName:'newUsername')?></label></p>
+                <p><label class="error-text sub-text"    for="newName"><?php setErrorMessage(fieldName:'newName')?></label></p>
 
                 
 

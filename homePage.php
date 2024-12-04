@@ -42,7 +42,7 @@
         <div class="main color justify-content-center">
             <main class="justify-content-center height-full">
                 <div class="conteiner main width-full p-24">
-                    It's first post on this site, <?php echo $user['username'] ?>
+                    It's first post on this site, <?php echo $user['name'] ?>
                 </div>
             </main>
             <footer>
