@@ -52,13 +52,15 @@
         
     }
 
-    function findUser(string $email):array|bool
+    function findUser(string $usernameOrEmail):array|bool
     {
         $pdo = setPDO();
 
         // check email
-        $query = $pdo->prepare("SELECT * FROM users WHERE email =:email LIMIT 1");
-        $query->execute([':email'=> $email]);
+        
+        $query = $pdo->prepare("SELECT * FROM users WHERE :usernameOrEmail IN (email, username);");
+        //$query = $pdo->prepare("SELECT * FROM users WHERE email =:email LIMIT 1");
+        $query->execute([':usernameOrEmail'=> $usernameOrEmail]);
         return $query->fetch(\PDO::FETCH_ASSOC);
     }
 
