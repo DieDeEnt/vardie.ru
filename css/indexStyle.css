@@ -1,0 +1,43 @@
+@media (min-width: 500px){
+
+  }
+
+/* Phones */
+@media (max-width: 500px){
+
+  }
+
+.header {
+    justify-content: space-between;
+    display: flex;
+    /* border-bottom: 1px solid var(--borderColor-default-gray); */
+    background-color: var(--bgColor-veryDarkBlue);
+}
+
+.conteiner.footer {
+    margin-top: 40px;
+    padding: 32px 16px;
+}
+
+.conteiner {
+    min-height: 0;
+}
+
+.text-sign-in {
+    color:var(--bgColor-veryLightPurpule);
+    font-size: 130%;
+}
+
+.test-text {
+    font-size: 150%;
+    
+}
+
+.text {
+    font-size: 14px;
+}
+
+main {
+    min-height: 70vh;
+
+}

@@ -103,7 +103,7 @@
 		die("Data recording error: {$e->getMessage()}");
 	}
 
-	redirect('/index.php');
+	redirect('/loginPage.php');
 
 	$pdo = null;
 ?>

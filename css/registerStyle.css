@@ -38,6 +38,19 @@
     padding: 32px 16px;
 }
 
+.btn.btn-success {
+    font-size: medium;
+    color: var(--bgColor-veryLightPurpule);
+    padding: 6px 12px;
+    background-color: var(--bgColor-purpule);
+    outline: none;
+}
+
+    .btn.btn-success:hover {
+        background-color: var(--bgColor-veryLightPurpule);
+        color: var(--bgColor-veryDarkBlue);
+        transition: var(--time-hover);
+    }
 
 
 

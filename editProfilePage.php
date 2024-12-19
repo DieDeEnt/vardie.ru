@@ -76,7 +76,7 @@
 
                 <div>
                     <input class="mt-16 btn input btn-success" type="submit" value="Edit" />
-                    <a class="mt-16 mx-8 btn input btn-success" href="/homePage.php" >Home</a>
+                    <a class="mt-16 mx-8 btn input btn-success" href="/index.php" >Home</a>
 
                 </div>
                 

@@ -34,7 +34,7 @@
     --time-hover: 0.2s;
     --time-focus: 0.4s;
     --default-text-size: 15px;
-    --default-sub-text-size: 13px;
+    --default-sub-text-size: 14px;
     --default-error-text-size: 13px;
     --default-font-family: "Quicksand", sans-serif;
 }
@@ -47,6 +47,7 @@ body {
     color: var(--textColor-default-text);
     font-size: var(--default-text-size);
     height:100%;
+    min-height: 100vh;
 }
 
 
@@ -137,28 +138,19 @@ a:hover {
     }
 
 
-
+footer {
+    margin-top: 3%;
+    min-height: 10vh;
+}
     
 
 
 
-.btn.btn-success {
-    font-size: medium;
-    color: var(--bgColor-veryLightPurpule);
-    padding: 6px 12px;
-    background-color: var(--bgColor-purpule);
-    outline: none;
-}
-
-    .btn.btn-success:hover {
-        background-color: var(--bgColor-veryLightPurpule);
-        color: var(--bgColor-veryDarkBlue);
-        transition: var(--time-hover);
-    }
 
     ul {
         list-style: none;
         display: flex;
+        text-align: center;
     }
 
     
@@ -242,3 +234,5 @@ a:hover {
 .text-center {text-align: center;}
 .position-relative {position: relative;}
 .font-x-large{font-size: x-large;}
+.flex{display: flex;}
+.align-items-centor{align-items:center;}

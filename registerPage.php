@@ -28,7 +28,7 @@
 <body>
     <div class="conteiner position-relative logo width-full text-center">
         <div class="reg text-center logo">
-            <a href="/"><img src="icon/logo.png" height="67.5" width="71" /></a>
+            <a href="index.php"><img src="icon/logo.png" height="67.5" width="71" /></a>
         </div>
     </div>
     <div class="conteiner main width-full">
@@ -104,8 +104,8 @@
                     </form>
                 </div>
                 <div class="conteiner sign-in mt-24 p-16 text-center">
-                    <a href="#">Where to get the Devcode?</a>
-                    <p class="sign-in text mt-8">Already have an account? <a href="index.php">Sign in</a></p>
+                    <a href="message.php">Where to get the Devcode?</a>
+                    <p class="sign-in text mt-8">Already have an account? <a href="loginPage.php">Sign in</a></p>
                 </div>
             </div>
         </main>
@@ -115,7 +115,7 @@
             <ul class="justify-content-center ul">
                 <li class="mx-8 mb-24"><a href="#" class="sub-text">Info Site</a></li>
                 <li class="mx-8 mb-24"><a href="#" class="sub-text">Scrambled it to make a type</a></li>
-                <li class="mx-8 mb-24"><a href="#" class="sub-text">Lorem Ipsum</a></li>
+                <li class="mx-8 mb-24"><a href="index.php" class="sub-text">Public</a></li>
                 <li class="mx-8 mb-24"><a href="#" class="sub-text">There are many variations of passages</a></li>
             </ul>
         </div>

@@ -28,7 +28,7 @@ else if(mb_strlen($password, 'utf-8')> 32){
 
 if(!empty($_SESSION['validation'])){
     setOldValue('usernameOrEmail',$email);
-    redirect('/index.php');
+    redirect('/loginPage.php');
 }
 
 
@@ -40,14 +40,14 @@ if (!$user) {
     $_SESSION['validation']['usernameOrEmail'] =  'E-mail is not registered. <a class="error-text sub-text" for="email" href="registerPage.php">Create account?</a>';
     // save old email
     setOldValue('usernameOrEmail',$usernameOrEmail);
-    redirect('/index.php');
+    redirect('/loginPage.php');
 }
 // check password
 if (!password_verify($password, $user['password'])) {
     $_SESSION['validation']['password'] =  'Wrong password.';
     // save old email
     setOldValue('usernameOrEmail',$usernameOrEmail);
-    redirect('/index.php');
+    redirect('/loginPage.php');
 }
 
 $_SESSION['user']['id'] = $user['id'];
