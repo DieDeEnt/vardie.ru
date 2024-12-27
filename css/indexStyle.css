@@ -1,10 +1,14 @@
 @media (min-width: 500px){
-
+    main {
+        min-height: 75vh;
+    }
   }
 
 /* Phones */
 @media (max-width: 500px){
-
+    main {
+        min-height: 68vh;
+    }
   }
 
 .header {
@@ -38,7 +42,7 @@
 }
 
 main {
-    min-height: 70vh;
+    /* min-height: 60vh; */
     align-items: center;
     justify-content: center;
 
