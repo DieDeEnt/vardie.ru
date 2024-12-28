@@ -10,6 +10,11 @@
 <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Vardie, vardie, die, war, Wardie, wardie, VarDie, Games, Public, community, Community, VARDIE, Main, main">
+    <meta name="description" content="Vardie is a pet project for explore web development.">
+    <meta name="googlebot" content="notranslate">
+    <meta name="robots" content="max-snippet:-1">
+    <meta name="robots" content="max-image-preview:large">
     <!-- Page Name -->
     <title>Vardie</title>
     <!-- Page Logo -->
